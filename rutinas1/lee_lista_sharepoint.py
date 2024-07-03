@@ -3,7 +3,7 @@ import pandas as pd
 from agrega_registros import agregar_registros
 
 def imagenes_list(ultimo_leido):
-    db_path = r'C:\sudcraultra\access\lista.accdb'
+    db_path = r'C:\sudcraultra_access\lista.accdb'
 
     try:
         # Conecta a la base de datos

@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import filedialog
 
-def obtener_ruta_archivo():
+def obtener_ruta_archivo(inicial):
     ruta_seleccionada = filedialog.askopenfilename(
-        initialdir="/",  # Directorio inicial (puedes cambiarlo)
+        initialdir= inicial + "/",  # Directorio inicial (puedes cambiarlo)
         title="Seleccionar archivo",
         filetypes=(("Archivos", "*.*"), ("Todos los archivos", "*.*"))
     )

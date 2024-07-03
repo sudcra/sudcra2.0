@@ -102,25 +102,25 @@ if __name__ == "__main__":
 
    
 # MATEMÁTICA
-    if 1==1 :
-        cod_asig='MAT1121'
-        prueba=8
+    if 1==2 :
+        cod_asig='MAT3110'
+        prueba=9
         ruta='C:/sudcraultra_access/SISTEMA/'
         archivo=f'{cod_asig}_{prueba}.xlsm'
         rutaArchivo= ruta + archivo
         carp = 'C:/Users/lgutierrez/Fundacion Instituto Profesional Duoc UC/Docentes Programa Matemática DUOC UC - PLANILLAS/MAT20241/PLANILLAS'
-        sufijo='T3'
+        sufijo='EP'
         copiasPlanillas(rutaArchivo,cod_asig,carp,sufijo)   
     
  # EMPRENDIMIENTO   
     if 1==2 :
-        cod_asig='EMP2206'
-        prueba=2
+        cod_asig='EMP2705'
+        prueba=4
         ruta='C:/sudcraultra_access/SISTEMA/'
         archivo=f'{cod_asig}_{prueba}.xlsm'
         rutaArchivo= ruta + archivo
         carp = 'C:/Users/lgutierrez/OneDrive - Fundacion Instituto Profesional Duoc UC/SUDCRA/PLANILLAS/EMP20241/PLANILLAS'
-        sufijo='E1'
+        sufijo='ET'
         copiasPlanillas(rutaArchivo,cod_asig,carp,sufijo)
  # ETICA 
     if 1==2 :
@@ -135,20 +135,20 @@ if __name__ == "__main__":
 
 
 # LENGUAJE 
-    if 1==2 :
-        cod_asig='PLC1110'
-        prueba=2
+    if 1==1 :
+        cod_asig='ECM0010'
+        prueba=4
         ruta='C:/sudcraultra_access/SISTEMA/'
         archivo=f'{cod_asig}_{prueba}.xlsm'
         rutaArchivo= ruta + archivo
         carp = 'C:/Users/lgutierrez/OneDrive - Fundacion Instituto Profesional Duoc UC/SUDCRA/PLANILLAS/LEN20241'
-        sufijo='E2'
+        sufijo='ET'
         copiasPlanillas(rutaArchivo,cod_asig,carp,sufijo)
 
     if 1==2:
         path_base='C:/sudcraultra/Consultas/'
         # Consula SQL tabla informes_secciones_pendientes
-        sql="select distinct e.cod_asig from eval e join asignaturas asig on asig.cod_asig = e.cod_asig where cod_programa = 'ETI' and num_prueba = 2"
+        sql="select distinct e.cod_asig from eval e join asignaturas asig on asig.cod_asig = e.cod_asig where cod_programa = 'pemp' and num_prueba = 4"
         df=ejecutasql(sql)
         # Consulta SQL tabla 
 
@@ -158,12 +158,12 @@ if __name__ == "__main__":
             for row in df.itertuples():
 
                 cod_asig=row.cod_asig
-                prueba=2
+                prueba=4
                 print(cod_asig)
                 ruta='C:/sudcraultra_access/SISTEMA/'
                 archivo=f'{cod_asig}_{prueba}.xlsm'
                 rutaArchivo= ruta + archivo
-                carp = 'C:/Users/lgutierrez/OneDrive - Fundacion Instituto Profesional Duoc UC/SUDCRA/PLANILLAS/EYFC20241/PLANILLAS'
-                sufijo='E2'
+                carp = 'C:/Users/lgutierrez/OneDrive - Fundacion Instituto Profesional Duoc UC/SUDCRA/PLANILLAS/EMP20241/PLANILLAS'
+                sufijo='ET'
                 copiasPlanillas(rutaArchivo,cod_asig,carp,sufijo)
                 pbar.update(1)

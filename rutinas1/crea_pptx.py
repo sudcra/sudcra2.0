@@ -33,4 +33,4 @@ def creappt(nombreppt,nuevoppt,evaluacion, seccion, profesor, itemes):
 if __name__ == "__main__":
 
     itemes=[3,5,7,8]
-    creappt("MAT5110-2024001-1.pptx", "nuevo8.pptx","Prueba 1", "MAT1111-005D", "Ronny Godoy", itemes)
+    creappt("MAT3110-2024001-3.pptx", "nuevo8.pptx","Prueba 1", "MAT1111-005D", "Ronny Godoy", itemes)

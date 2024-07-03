@@ -65,6 +65,9 @@ def xls_a_df(ruta, anoperiodo , id_archivoleido):
             if rep != True:
                 rep = False
 
+            if rep == 1:
+                rep = True
+
             if fg=='Grupo':
                 forma=1
                 grupo=int(fila['Grupo'])
